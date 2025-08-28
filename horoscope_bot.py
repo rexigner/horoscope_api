@@ -9,9 +9,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 zodiac_signs = [
-    ['aries', 'taurus', 'gemini', 'cancer'],
+    ['aries', 'taurus', 'gemini', 'can.cer'],
     ['leo', 'virgo', 'libra', 'scorpio'],
-    ['sagittarius', 'capricorn', 'aquarius', 'pisces_']
+    ['sagittarius', 'capricorn', 'aquarius', 'pisces']
 ]
 
 
@@ -24,7 +24,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 def get_horoscope(sign: str) -> str:
     try:
-        # Use the deployed Flask API URL here
+        # Updated API URL to your deployed Flask service
         url = f"https://horoscope-api-10.onrender.com/horoscope?sign={sign.lower()}"
         response = requests.get(url)
         if response.status_code == 200:
