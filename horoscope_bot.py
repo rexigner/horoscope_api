@@ -24,8 +24,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 def get_horoscope(sign: str) -> str:
     try:
-        # Change localhost to your API server address if not running locally
-        url = f"http://127.0.0.1:5000/horoscope?sign={sign.lower()}"
+        # Use the deployed Flask API URL here
+        url = f"https://horoscope-api-10.onrender.com/horoscope?sign={sign.lower()}"
         response = requests.get(url)
         if response.status_code == 200:
             data = response.json()
