@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 zodiac_signs = [
     ['aries', 'taurus', 'gemini', 'cancer'],
     ['leo', 'virgo', 'libra', 'scorpio'],
-    ['sagittarius', 'capricorn', 'aquarius', 'pisces']
+    ['sagittarius', 'capricorn', 'aquarius', 'pisces_']
 ]
 
 
